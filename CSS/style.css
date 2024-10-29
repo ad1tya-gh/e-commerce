@@ -1,0 +1,45 @@
+.warna1 {
+  background-color: #4a628a;
+}
+
+.warna2 {
+  background-color: #7ab2d3;
+}
+
+.warna3 {
+  background-color: #b9e5e8;
+}
+
+.warna4 {
+  background-color: #dff2eb;
+}
+
+.banner {
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/Banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.highlighted-kategori {
+  height: 250px;
+}
+
+.kategori-baju-pria {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/bajupria.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.kategori-baju-wanita {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/bajupria.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.kategori-sepatu {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/bajupria.jpg");
+  background-position: center;
+  background-size: cover;
+}
