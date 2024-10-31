@@ -154,6 +154,23 @@
     font-style: normal;
     }
 
+    /* warna */
+
+    .warna1 {
+    background-color: #181c14;
+    }
+
+    .warna2 {
+    background-color: #3c3d37;
+    }
+
+    .warna3 {
+    background-color: #697565;
+    }
+
+    .warna4 {
+    background-color: #ecdfcc;
+    }
 </style>
 
 <body>
