@@ -14,6 +14,22 @@
   background-color: #dff2eb;
 }
 
+/* .warna1 {
+  background-color: #181c14;
+}
+
+.warna2 {
+  background-color: #3c3d37;
+}
+
+.warna3 {
+  background-color: #697565;
+}
+
+.warna4 {
+  background-color: #ecdfcc;
+} */
+
 .banner {
   height: 80vh;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/Banner.jpg");
