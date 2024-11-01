@@ -11,7 +11,7 @@
     <title>ALcatraz e-commerce</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -185,7 +185,7 @@
             <div class="col-md-8 offset-md-2">
                 <form action="produk.php" method="get">
                     <div class="input-group input-group-lg my-4">
-                        <input type="text" class="form-control pacifico-regular" placeholder="Nama Produk" aria-label="Nama Produk" aria-describedby="basic-addon2" nama="keyword">
+                        <input type="text" class="form-control pacifico-regular" placeholder="Nama Produk" aria-label="Nama Produk" aria-describedby="basic-addon2" name="keyword">
                         <button type="submit" class="btn warna2 text-white josefin-sans-400">Telusuri</button>
                     </div>
                 </form>

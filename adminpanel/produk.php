@@ -309,6 +309,7 @@
                         }
 
                         //query insert to produk table
+                        
                         $queryTambah = mysqli_query($conn, "INSERT INTO produk (kategori_id, nama, harga, foto, detail, ketersediaan_stok) VALUES ('$kategori', '$nama', '$harga', '$newName', '$detail', '$stok')");
 
                         if($queryTambah){
