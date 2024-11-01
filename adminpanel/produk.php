@@ -304,25 +304,27 @@
                         <?php
                                 }else{
                                     move_uploaded_file($_FILES["foto"]["tmp_name"], $target_dir . $newName);
+
+                                    //query insert to produk table
+                        
+                                    $queryTambah = mysqli_query($conn, "INSERT INTO produk (kategori_id, nama, harga, foto, detail, ketersediaan_stok) VALUES ('$kategori', '$nama', '$harga', '$newName', '$detail', '$stok')");
+
+                                    if($queryTambah){
+                                        ?>
+                                            <div class="alert alert-success mt-3 josefin-sans-400" role="alert">
+                                                Produk berhasil di tambahkan
+                                            </div>
+
+                                            <meta http-equiv="refresh" content="2; url=produk.php">
+                                        <?php
+                                    }else{
+                                        echo mysqli_error($conn);
+                                    }
                                 }
                             }
                         }
 
-                        //query insert to produk table
                         
-                        $queryTambah = mysqli_query($conn, "INSERT INTO produk (kategori_id, nama, harga, foto, detail, ketersediaan_stok) VALUES ('$kategori', '$nama', '$harga', '$newName', '$detail', '$stok')");
-
-                        if($queryTambah){
-                            ?>
-                                <div class="alert alert-success mt-3 josefin-sans-400" role="alert">
-                                    Produk berhasil di tambahkan
-                                </div>
-
-                                <meta http-equiv="refresh" content="2; url=produk.php">
-                            <?php
-                        }else{
-                            echo mysqli_error($conn);
-                        }
                     }
                 }
             ?>
