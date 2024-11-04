@@ -361,10 +361,10 @@
                                         <td><?php echo $jumlah; ?></td>
                                         <td><?php echo $data['nama']; ?></td>
                                         <td><?php echo $data['nama_kategori']; ?></td>
-                                        <td><?php echo $data['harga']; ?></td>
+                                        <td><?php echo number_format("$data[harga]", 2, ",", "."); ?></td>
                                         <td><?php echo $data['ketersediaan_stok']; ?></td>
                                         <td>
-                                            <a href="produk-detail.php?p= <?php echo $data ['id'];?>" class = "btn btn-info">
+                                            <a href="produk-detail.php?p=<?php echo $data['id'];?>" class = "btn btn-info">
                                                 <i class = "fas fa-splid fa-search"></i>
                                             </a>
                                         </td>

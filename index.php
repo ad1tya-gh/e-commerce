@@ -171,6 +171,33 @@
     .warna4 {
     background-color: #ecdfcc;
     }
+
+    .kategori-baju-pria {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("image/baEvECXvejqNkWOFiQ05.jpg");
+    background-size: cover;
+    background-position: center;
+    }
+
+    .kategori-baju-wanita {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("image/0oA2YaAsk4IBo4b8SH7p.jpeg");
+    background-size: cover;
+    background-position: center;
+    }
+
+    .kategori-sepatu {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("image/bH8bQgvskP7rCzDMsnyJ.jpg");
+    background-position: center;
+    background-size: cover;
+    }
+
+    .hover-img {
+        transition: 0.5s;
+    }
+
+    .hover-img:hover {
+        transform: scale(1.1);
+        z-index: 2;
+    }
 </style>
 
 <body>
@@ -199,20 +226,26 @@
             <h3 class="josefin-sans-700">Kategori Terlaris</h3>
 
             <div class="row mt-5">
-                <div class="col-md-4 mb-3">
-                    <div class="highlighted-kategori kategori-baju-pria d-flex justify-content-center align-items-center">
-                        <h4 class="text-white hanken-600-"><a class="no-decoration" href="produk.php?kategori=Pakaian Pria">Baju Pria</a></h4>
-                    </div>
+                <div class=" hover-img col-md-4 mb-3 ">
+                    <a class="no-decoration" href="produk.php?kategori=Pakaian Pria">
+                        <div class=" highlighted-kategori kategori-baju-pria img-thumbnail d-flex justify-content-center align-items-center">
+                            <h4 class="text-white hanken-600-">Baju Pria</h4>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <div class="highlighted-kategori kategori-sepatu d-flex justify-content-center align-items-center">
-                        <h4 class="text-white hanken-600-"><a class="no-decoration" href="produk.php?kategori=Sepatu">Sepatu</a></h4>
-                    </div>
+                <div class=" hover-img col-md-4 mb-3">
+                    <a class="no-decoration" href="produk.php?kategori=Sepatu">
+                        <div class="highlighted-kategori kategori-sepatu img-thumbnail d-flex justify-content-center align-items-center">
+                            <h4 class="text-white hanken-600-">Sepatu</h4>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <div class="highlighted-kategori kategori-baju-wanita d-flex justify-content-center align-items-center">
-                        <h4 class="text-white hanken-600-"><a class="no-decoration"href="produk.php?kategori=Pakaian Wanita">Baju Wanita</a></h4>
-                    </div>
+                <div class=" hover-img col-md-4 mb-3">
+                    <a class="no-decoration"href="produk.php?kategori=Pakaian Wanita">
+                        <div class="highlighted-kategori kategori-baju-wanita img-thumbnail d-flex justify-content-center align-items-center">
+                            <h4 class="text-white hanken-600-">Baju Wanita</h4>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -221,7 +254,7 @@
     <!-- tentang kami -->
 
     <div class="container-fluid warna3 py-5" id="tentang-kami">
-        <div class="container text-center">
+        <div class="container text-center text-white">
             <h3 class="josefin-sans-700">Tentang Kami</h3>
             <p class="fs-6 mt-3 hanken">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum laudantium facilis aspernatur incidunt atque esse molestias. Corrupti perspiciatis iusto provident reprehenderit! Provident, beatae aspernatur repellat, dolorem similique, quasi praesentium error repellendus fugiat non nam excepturi? Nam repudiandae animi at quisquam rem tenetur amet, quis a fuga? Ullam deserunt, similique voluptates et odio possimus corporis animi eum veniam nemo adipisci aliquid beatae consequuntur a ipsam obcaecati expedita tenetur facere? Architecto molestias similique suscipit harum voluptate illum quo at aliquid porro doloremque.</p>
         </div>
@@ -244,8 +277,8 @@
                         <div class="card-body">
                             <h4 class="card-title outfit-500"><?php echo $data['nama']; ?></h4>
                             <p class="card-text text-truncate hanken"><?php echo $data['detail']; ?></p>
-                            <p class="text-harga card-text hanken-600">Rp.<?php echo $data['harga']; ?></p>
-                            <a href="produk-detail.php?q=<?php echo $data['nama']; ?> " class="btn warna2 text-white hanken">Lihat Detail</a>
+                            <p class="text-harga card-text hanken-600"><?php echo "Rp " . number_format("$data[harga]", 2, ",", "."); ?></p>
+                            <a href="produk-detail.php?nama=<?php echo $data['nama']; ?> " class="btn warna2 text-white hanken">Lihat Detail</a>
                         </div>
                     </div>
                 </div>
