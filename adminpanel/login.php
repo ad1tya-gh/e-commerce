@@ -26,6 +26,7 @@
         height: 300px;
         box-sizing: border-box;
         border-radius: 10px;
+        background-color: rgba(225,225,225,0.35);
     }
 
     .josefin-sans-400 {
@@ -42,11 +43,19 @@
     font-style: normal;
     font-size: 20px;
     }
+
+    body {
+        background-image: url(../image/Banner.jpg);
+        background-repeat: none;
+        background-size: cover;
+    }
+
+    
 </style>
 
 <body>
     <div class="main d-flex flex-column justify-content-center align-items-center">
-        <div class="login-box p-5 shadow">
+        <div class="login-box p-5 shadow-lg">
             <form action="" method="post">
                 <div class="josefin-sans-600">
                     <label for="username">username</label>
