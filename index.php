@@ -176,18 +176,21 @@
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("image/baEvECXvejqNkWOFiQ05.jpg");
     background-size: cover;
     background-position: center;
+    box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.2);
     }
 
     .kategori-baju-wanita {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("image/0oA2YaAsk4IBo4b8SH7p.jpeg");
     background-size: cover;
     background-position: center;
+    box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.2);
     }
 
     .kategori-sepatu {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("image/bH8bQgvskP7rCzDMsnyJ.jpg");
     background-position: center;
     background-size: cover;
+    box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.2);
     }
 
     .hover-img {
@@ -197,6 +200,10 @@
     .hover-img:hover {
         transform: scale(1.1);
         z-index: 2;
+    }
+
+    .card {
+        box-shadow:0px 0px 12px 4px rgba(0,0,0,0.2);
     }
 </style>
 
