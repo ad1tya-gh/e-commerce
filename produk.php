@@ -185,10 +185,18 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     }
 
     .list-group a {
         text-decoration: none;
+    }
+
+    @media screen and (max-width: 1050px) {
+        .banner-produk {
+            height: 40vh;
+            padding-top: 80px;
+        }
     }
 </style>
 
@@ -209,14 +217,14 @@
                 <h3 class="josefin-sans-700">Kategori</h3>
                 <ul class="list-group josefin-sans-400">
                     <?php while($kategori = mysqli_fetch_array($queryKategori)){ ?>
-                    <a href="produk.php?kategori=<?php echo $kategori['nama']; ?>">
+                    <a href="produk.php?kategori=<?php echo $kategori['nama']; ?>#Produk">
                         <li class="list-group-item"><?php echo $kategori['nama']; ?></li>
                     </a>
                     <?php } ?>
                 </ul>
             </div>
             
-            <div class="col-lg-9">
+            <div class="col-lg-9" id="Produk">
                 <h3 class="text-center mb-3 josefin-sans-700">Produk</h3>
                 <div class="row">
                     <?php if($countData < 1){

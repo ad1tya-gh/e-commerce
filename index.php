@@ -205,6 +205,19 @@
     .card {
         box-shadow:0px 0px 12px 4px rgba(0,0,0,0.2);
     }
+
+    .banner {
+        height: 100vh;
+        background-attachment: fixed;
+    }
+
+    @media screen and (max-width: 1050px){
+        .banner {
+            height: 40vh;
+            padding-top: 80px;
+        }
+    }
+
 </style>
 
 <body>

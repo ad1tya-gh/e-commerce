@@ -31,7 +31,7 @@
 }
 
 .banner {
-  height: 80vh;
+  height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/Banner.jpg");
   background-repeat: no-repeat;
   background-position: center;

@@ -166,6 +166,17 @@
     .list-group a {
         text-decoration: none;
     }
+
+    .banner-produk {
+        background-attachment: fixed;
+    }
+
+    @media screen and (max-width: 1050px) {
+        .banner-produk {
+            height: 40vh;
+            padding-top: 80px;
+        }
+    }
 </style>
 
 <body>

@@ -29,6 +29,10 @@
         background-color: rgba(225,225,225,0.35);
     }
 
+    .allert {
+        width: 500px;
+    }
+
     .josefin-sans-400 {
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
@@ -45,12 +49,20 @@
     }
 
     body {
-        background-image: url(../image/Banner.jpg);
+        background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../image/Banner.jpg);
         background-repeat: none;
         background-size: cover;
     }
 
-    
+    @media screen and (max-width: 768px) {
+        .login-box {
+            width: 300px;
+        }
+
+        .allert {
+            width: 300px;
+        }
+    }
 </style>
 
 <body>
@@ -73,7 +85,7 @@
             </form>
         </div>
 
-        <div class="mt-3" style = "width: 500px;">
+        <div class="mt-3 allert">
             <?php
                 if(isset($_POST['loginbtn'])){
                     $username = htmlspecialchars($_POST['username']);
