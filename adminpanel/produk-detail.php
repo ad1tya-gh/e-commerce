@@ -4,7 +4,8 @@
 
     $id = $_GET['p'];
 
-    $query = mysqli_query($conn, "SELECT a.*, b.nama AS nama_kategori FROM produk a JOIN kategori b ON a.kategori_id=b.id");
+    
+    $query = mysqli_query($conn, "SELECT produk.*, kategori.nama AS nama_kategori FROM produk JOIN kategori ON produk.kategori_id=kategori.id WHERE produk.id=$id");
     $data = mysqli_fetch_array($query);
 
     $queryKategori = mysqli_query($conn, "SELECT * FROM kategori WHERE id != '$data[kategori_id]'");
@@ -215,7 +216,7 @@
                 <div class="josefin-sans-400">
                     <label for="kategori">Kategori</label>
                     <select name="kategori" id="kategori" class="form-control" required>
-                        <option value="<?php echo $data['kategori_id'] ?>"><?php echo $data['nama_kategori'] ?></option>
+                        <option value="<?php echo $data['id'] ?>"><?php echo $data['nama_kategori'] ?></option>
                         <?php
                         while($dataKategori=mysqli_fetch_array($queryKategori)){
                         ?>
